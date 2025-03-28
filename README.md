@@ -1,0 +1,1 @@
+# std-051-smartvox-config-test
