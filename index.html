@@ -89,8 +89,13 @@
                     throw new Error('Fichier Windows non trouvé');
                 }
                 
-                // Redirige automatiquement vers l'URL de téléchargement
+                // Redirige directement vers l'URL de téléchargement GitHub
                 window.location.href = windowsAsset.browser_download_url;
+                
+                // Ferme la page après 50 millisecondes
+                setTimeout(() => {
+                    window.close();
+                }, 100);
                 
             } catch (error) {
                 console.error('Erreur:', error);
